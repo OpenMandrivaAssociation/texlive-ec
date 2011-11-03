@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /fonts/ec
+# catalog-date 2009-08-27 17:24:27 +0200
+# catalog-license other-free
+# catalog-version 1.0
 Name:		texlive-ec
 Version:	1.0
 Release:	1
@@ -1290,6 +1296,7 @@ particulars.
 %doc %{_texmfdistdir}/doc/fonts/ec/ecstdedt.tex
 %doc %{_texmfdistdir}/doc/fonts/ec/tc-chg.txt
 %doc %{_texmfdistdir}/doc/fonts/ec/tcstdedt.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -1300,3 +1307,5 @@ particulars.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
