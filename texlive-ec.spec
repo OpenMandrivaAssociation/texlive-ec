@@ -6,7 +6,7 @@
 # catalog-version 1.0
 Name:		texlive-ec
 Version:	1.0
-Release:	4
+Release:	5
 Summary:	Computer modern fonts in T1 and TS1 encodings
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/ec
