@@ -1,18 +1,12 @@
-# revision 25033
-# category Package
-# catalog-ctan /fonts/ec
-# catalog-date 2009-08-27 17:24:27 +0200
-# catalog-license other-free
-# catalog-version 1.0
 Name:		texlive-ec
-Version:	1.0
-Release:	12
+Version:	25033
+Release:	1
 Summary:	Computer modern fonts in T1 and TS1 encodings
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/ec
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ec.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ec.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ec.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ec.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -37,12 +31,12 @@ of the EC set, and differs from the EC in a number of
 particulars.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -1290,28 +1284,10 @@ particulars.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Mon Jan 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0-3
-+ Revision: 758861
-- Update to latest upstream release
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0-2
-+ Revision: 751316
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.0-1
-+ Revision: 718298
-- texlive-ec
-- texlive-ec
-- texlive-ec
-- texlive-ec
-
