@@ -1,6 +1,6 @@
 Name:		texlive-ec
 Version:	25033
-Release:	1
+Release:	2
 Summary:	Computer modern fonts in T1 and TS1 encodings
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/ec
