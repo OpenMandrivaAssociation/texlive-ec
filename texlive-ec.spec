@@ -3,7 +3,7 @@ Version:	25033
 Release:	2
 Summary:	Computer modern fonts in T1 and TS1 encodings
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/ec
+URL:		https://www.ctan.org/tex-archive/fonts/ec
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ec.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ec.doc.r%{version}.tar.xz
